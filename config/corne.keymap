@@ -37,8 +37,8 @@
 
             bindings = <
 &kp GRAVE  &kp EXCL                         &kp AT                             &kp HASH                           &kp DOLLAR                      &kp PERCENT                     &kp AMPERSAND      &kp ASTERISK    &kp UP_ARROW      &kp MINUS   &kp EQUAL  &kp DEL
-&kp CAPS   &bt BT_SEL 0                     &bt BT_SEL 1                       &bt BT_SEL 2                       &bt BT_SEL 3                    &bt BT_SEL 4                    &kp C_VOLUME_UP    &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT   &kp SQT    &kp HOME
-&trans     &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(122,100,50)  &rgb_ug RGB_COLOR_HSB(237,100,50)  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(0,0,0)    &kp C_VOLUME_DOWN  &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_NEXT  &trans     &kp END
+&kp CAPS   &bt BT_SEL 0                     &bt BT_SEL 1                       &bt BT_SEL 2                       &bt BT_SEL 3                    &bt BT_SEL 4                    &kp C_VOLUME_UP    &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT   &kp SQT    &kp BSLH
+&trans     &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(122,100,50)  &rgb_ug RGB_COLOR_HSB(237,100,50)  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(0,0,0)    &kp C_VOLUME_DOWN  &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_NEXT  &kp HOME   &kp END
                                                                                &trans                             &trans                          &kp SPACE                       &trans             &mo 3           &trans
             >;
         };
