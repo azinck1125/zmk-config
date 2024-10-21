@@ -36,10 +36,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp EXCL                         &kp AT                             &kp HASH                           &kp DOLLAR                      &kp PERCENT                     &kp AMPERSAND      &kp ASTERISK    &kp UP_ARROW      &kp MINUS   &kp EQUAL  &kp DEL
-&kp CAPS   &bt BT_SEL 0                     &bt BT_SEL 1                       &bt BT_SEL 2                       &bt BT_SEL 3                    &bt BT_SEL 4                    &kp C_VOLUME_UP    &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT   &kp SQT    &kp BSLH
-&trans     &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(122,100,50)  &rgb_ug RGB_COLOR_HSB(237,100,50)  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(0,0,0)    &kp C_VOLUME_DOWN  &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_NEXT  &kp HOME   &kp END
-                                                                               &trans                             &trans                          &kp SPACE                       &trans             &mo 3           &trans
+&kp GRAVE  &kp EXCL  &kp AT          &kp HASH          &kp DOLLAR         &kp PERCENT          &kp AMPERSAND  &kp ASTERISK    &kp UP_ARROW   &kp MINUS  &kp EQUAL  &kp DEL
+&kp CAPS   &kp LPAR  &kp RPAR        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp C_VOLUME_UP      &kp HOME       &kp LEFT_ARROW  &kp UP_ARROW   &kp RIGHT  &kp SQT    &kp BSLH
+&none      &none     &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT         &kp C_VOLUME_DOWN    &kp END        &none           &none          &none      &none      &kp RIGHT_SHIFT
+                                     &kp LEFT_GUI      &trans             &kp SPACE            &kp RCTRL      &mo 3           &kp RIGHT_ALT
             >;
         };
 
@@ -51,19 +51,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans     &trans  &trans  &trans    &trans  &trans       &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MULTIPLY  &kp DEL
-&kp LCTRL  &trans  &trans  &trans    &trans  &trans       &kp KP_SUBTRACT  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp KP_ENTER
-&trans     &trans  &trans  &trans    &trans  &trans       &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp RIGHT_SHIFT
-                           &kp LGUI  &mo 3   &kp SPACE    &trans           &trans           &none
+&trans        &trans  &trans  &trans        &trans  &trans       &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MULTIPLY  &kp DEL
+&kp CAPSLOCK  &trans  &trans  &trans        &trans  &trans       &kp KP_SUBTRACT  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp KP_ENTER
+&trans        &trans  &trans  &trans        &trans  &trans       &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp RIGHT_SHIFT
+                              &kp LEFT_GUI  &mo 3   &kp SPACE    &kp RCTRL        &trans           &kp RIGHT_ALT
             >;
         };
 
-        layer_3 {
+        dual_mod {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6                &kp F7                 &kp F8            &kp F9             &kp F10  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans                &trans                 &trans            &trans             &trans   &trans
-                        &trans  &trans  &trans    &trans                &trans                 &trans
+&trans                          &kp F1                           &kp F2                             &kp F3                             &kp F4           &kp F5             &kp F6           &kp F7  &kp F8         &kp F9  &kp F10  &kp F11
+&bt BT_CLR                      &bt BT_SEL 0                     &bt BT_SEL 1                       &bt BT_SEL 2                       &bt BT_SEL 3     &bt BT_SEL 4       &rgb_ug RGB_EFF  &trans  &trans         &trans  &trans   &trans
+&rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(121,100,50)  &rgb_ug RGB_COLOR_HSB(242,100,50)  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD    &rgb_ug RGB_TOG  &trans  &trans         &trans  &trans   &trans
+                                                                                                    &kp LEFT_GUI                       &trans           &kp SPACE          &kp RCTRL        &trans  &kp RIGHT_ALT
             >;
         };
     };
