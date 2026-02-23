@@ -39,10 +39,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE       &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4       &kp N5               &kp NUMBER_6   &kp N7          &kp N8          &kp MINUS        &kp EQUAL  &kp DEL
-&kp CAPS        &kp LPAR      &kp RPAR        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp C_VOLUME_UP      &kp HOME       &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT        &kp SQT    &kp BSLH
-&kp LEFT_SHIFT  &none         &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT         &kp C_VOLUME_DOWN    &kp END        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none      &kp RIGHT_SHIFT
-                                              &kp LCTRL         &trans             &kp SPACE            &kp RIGHT_ALT  &mo 3           &kp LEFT_WIN
+&kp GRAVE       &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4       &kp N5               &kp NUMBER_6    &kp N7          &kp N8        &kp MINUS      &kp EQUAL  &kp DEL
+&kp CAPS        &kp LPAR      &kp RPAR        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp C_VOLUME_UP      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &kp SQT    &kp BSLH
+&kp LEFT_SHIFT  &none         &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT         &kp C_VOLUME_DOWN    &kp HOME        &kp END         &kp PAGE_UP   &kp PAGE_DOWN  &none      &kp RIGHT_SHIFT
+                                              &kp LCTRL         &trans             &kp SPACE            &kp RIGHT_ALT   &mo 3           &kp LEFT_WIN
             >;
         };
 
@@ -56,7 +56,7 @@
             bindings = <
 &kp ESC         &trans  &trans  &trans     &trans  &trans       &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MULTIPLY  &kp DEL
 &kp CAPSLOCK    &trans  &trans  &trans     &trans  &trans       &kp KP_SUBTRACT  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp KP_NUMLOCK
-&kp LEFT_SHIFT  &trans  &trans  &trans     &trans  &trans       &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &mo 4
+&kp LEFT_SHIFT  &trans  &trans  &trans     &trans  &trans       &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &none
                                 &kp LCTRL  &mo 3   &kp SPACE    &kp RIGHT_ALT    &trans           &kp LEFT_WIN
             >;
         };
@@ -67,15 +67,6 @@
 &bt BT_CLR                      &bt BT_SEL 0                     &bt BT_SEL 1                       &bt BT_SEL 2                       &bt BT_SEL 3     &bt BT_SEL 4       &bl BL_ON      &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &ext_power EP_ON   &kp F12  &kp F13
 &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(122,100,50)  &rgb_ug RGB_COLOR_HSB(237,100,50)  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD    &bl BL_OFF     &rgb_ug RGB_EFR  &rgb_ug RGB_SPD  &ext_power EP_OFF  &kp F14  &kp F15
                                                                                                     &kp LCTRL                          &trans           &kp SPACE          &kp RIGHT_ALT  &trans           &kp LEFT_WIN
-            >;
-        };
-
-        hidden-arrows {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &none   &trans  &trans          &kp UP_ARROW    &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans           &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
