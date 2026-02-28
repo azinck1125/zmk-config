@@ -16,7 +16,7 @@
         colon_w: colon_w {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp W>;
+            bindings = <&kp COLON &kp W &kp ENTER>;
             label = "COLON_W";
         };
     };
