@@ -19,6 +19,13 @@
             bindings = <&kp COLON &kp W &kp ENTER>;
             label = "COLON_W";
         };
+
+        colon_q: colon_q {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp Q &kp RET>;
+            label = "COLON_Q";
+        };
     };
 
     keymap {
@@ -71,9 +78,9 @@
 
         dual_mod {
             bindings = <
-&kp ESC                         &kp F1                           &kp F2                             &kp F3                             &kp F4           &kp F5             &kp F6           &kp F7             &kp F8        &kp F9  &kp F10  &kp F11
-&bt BT_CLR                      &bt BT_SEL 0                     &bt BT_SEL 1                       &bt BT_SEL 2                       &bt BT_SEL 3     &bt BT_SEL 4       &rgb_ug RGB_EFF  &ext_power EP_ON   &colon_w      &none   &kp F12  &kp F13
-&rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(122,100,50)  &rgb_ug RGB_COLOR_HSB(237,100,50)  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD    &rgb_ug RGB_EFR  &ext_power EP_OFF  &kp LC(B)     &none   &kp F14  &kp F15
+&kp ESC                         &kp F1                           &kp F2                             &kp F3                             &kp F4           &kp F5             &kp F6           &kp F7             &kp F8        &kp F9     &kp F10  &kp F11
+&bt BT_CLR                      &bt BT_SEL 0                     &bt BT_SEL 1                       &bt BT_SEL 2                       &bt BT_SEL 3     &bt BT_SEL 4       &rgb_ug RGB_EFF  &ext_power EP_ON   &colon_w      &kp LC(B)  &kp F12  &kp F13
+&rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(122,100,50)  &rgb_ug RGB_COLOR_HSB(237,100,50)  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD    &rgb_ug RGB_EFR  &ext_power EP_OFF  &colon_q      &none      &kp F14  &kp F15
                                                                                                     &kp LEFT_ALT                       &trans           &kp SPACE          &kp LCTRL        &trans             &kp LEFT_WIN
             >;
         };
